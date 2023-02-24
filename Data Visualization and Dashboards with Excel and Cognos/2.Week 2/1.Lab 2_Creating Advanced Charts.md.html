@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/IDSNlogo.png" width="200" height="200">
+    <h1>Hands-on Lab 2: Creating Advanced Charts</h1>
+    <p><strong>Estimated time needed:</strong> 20 minutes</p>
+    <p>In this lab, you will learn how to create some advanced charts in Excel. We’ll first create a sunburst chart, then a scatter chart, and lastly a histogram.</p>
+    <h1>Software Used in this Lab</h1>
+    <p>The instruction videos in this course use the full Excel Desktop version as this has all the available product features, but for the hands-on labs we will be using the free 'Excel for the web' version as this is available to everyone.</p>
+    <p>Although you can use the Excel Desktop software if you have access to this version, <ins>it is recommended that you use Excel for the web for the hands-on labs </ins>as the lab instructions specifically refer to this version, and there are some small differences in the interface and available features. If you do not yet have access to Excel for the Web, you can follow the instructions in the following lab to get started with it: <a href="https://cocl.us/IBMDeveloperSkillsNetwork-DA0130EN-HandsOnLab-1" target="_blank" rel="external">Hands-on Lab: Introduction to Excel for the web</a>.</p>
+    <h1>Dataset Used in this Lab</h1>
+    <p>The dataset used in this lab comes from the following source: <a href="https://www.kaggle.com/gagandeep16/car-sales?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDV0130ENSkillsNetwork20531073-2022-01-01" target="_blank" rel="external">https://www.kaggle.com/gagandeep16/car-sales</a> under a <strong><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="external">CC0: Public Domain license</a></strong>. We are using a modified subset of that dataset for the lab, so to follow the lab instructions successfully, please use the dataset provided with the lab, rather than the dataset from the original source.</p>
+    <h1>Objectives</h1>
+    <p>After completing this lab, you will be able to:</p>
+    <ul>
+      <li>Create a hierarchical type chart such as a sunburst chart.</li>
+      <li>Create a scatter chart.</li>
+      <li>Create a statistical chart such as a histogram.</li>
+    </ul>
+    <h1>Exercise 1 : Creating Sunburst, Scatter and Histogram Charts in Excel</h1>
+    <p>In this exercise, you will learn how to create advanced charts, such as a sunburst chart, a scatter chart and histogram charts in Excel.</p>
+    <h2>Task A : Create a Sunburst Chart</h2>
+    <ol>
+      <li>
+        <p>Download the file <strong><a href="Car_Sales_Kaggle_DV0130EN_Lab2_Start.xlsx">Car_Sales_Kaggle_DV0130EN_Lab2_Start.xlsx</a></strong>. Upload and open it using Excel for the web.</p>
+      </li>
+      <li>
+        <p>Switch to the worksheet named <strong>Sunburst Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A (Manufacturer)</strong>, and select <strong>Filter...</strong>.</p>
+      </li>
+      <li>
+        <p>In the list, only select <strong>Nissan</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Select column <strong>B</strong>, then hold <strong>SHIFT</strong> and select column <strong>C</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Other Charts</strong> and choose <strong>Sunburst</strong> from the <strong>Hierarchical</strong> category.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/1.A.6.png" width="400" height="400">
+      </li>
+    </ol><br>
+    <ol start="7">
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Chart Title</strong> and select <strong>Edit Chart Title...</strong>.</p>
+      </li>
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Unit Sales of Nissan Cars"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Legend</strong> and select <strong>Show Legend at Right</strong>.</p>
+      </li>
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/1.A.11.png" width="782" height="350">
+      </li>
+    </ol><br>
+    <h2>Task B : Create a Scatter Chart</h2>
+    <ol>
+      <li>
+        <p>Switch to the worksheet named <strong>Scatter Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A (Manufacturer)</strong>, and select <strong>Filter...</strong>.</p>
+      </li>
+      <li>
+        <p>In the list, only select <strong>Audi, BMW, Mercedes-B, Porsche, Volkswagen</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Select column <strong>E</strong>, then hold <strong>SHIFT</strong> and select column <strong>F</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Scatter</strong> Chart and choose <strong>Scatter with only Markers</strong> from the <strong>Scatter</strong> category.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/1.B.5.png" width="560" height="350">
+      </li>
+    </ol><br>
+    <ol start="6">
+      <li>
+        <p>Drag the chart across to the right of the sheet.</p>
+      </li>
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Chart Title</strong> and select <strong>Edit Chart Title...</strong>.</p>
+      </li>
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Comparing Price with Year Resale Value of German Cars"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Axis Titles</strong> and select <strong>Primary Horizontal Axis Title > Edit Horizontal Axis Title...</strong>.</p>
+      </li>
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Price"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Axis Titles</strong> and select <strong>Primary Vertical Axis Title > Edit Vertical Axis Title...</strong>.</p>
+      </li>
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Year Resale Value"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Legend</strong> and select <strong>None</strong>.</p>
+      </li>
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/1.B.15.png" width="660" height="350">
+      </li>
+    </ol><br>
+    <h2>Task C : Create a Histogram Chart</h2>
+    <ol>
+      <li>
+        <p>Switch to the worksheet named <strong>Histogram Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A (Manufacturer)</strong>, and select <strong>Filter...</strong>.</p>
+      </li>
+      <li>
+        <p>In the list, only select <strong>Audi, BMW, Mercedes-B, Porsche, Volkswagen</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Select column <strong>B</strong>, then hold <strong>SHIFT</strong> and select column <strong>C</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Other Charts</strong> Chart and choose <strong>Histogram</strong> from the <strong>Statistical</strong> category.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/1.C.5.png" width="400" height="440">
+      </li>
+    </ol><br>
+    <ol start="6">
+      <li>
+        <p>Drag the chart across to the right of the sheet.</p>
+      </li>
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Chart Title</strong> and select <strong>Edit Chart Title...</strong>.</p>
+      </li>
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Count of German Car Models by Price Range"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Data Labels</strong> and select <strong>Center</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Format</strong> group of the <strong>Chart</strong> tab, click <strong>Format</strong>.</p>
+      </li>
+      <li>
+        <p>On the right side menu bar <strong>Format</strong>, select <strong>Series "Price" > Fill > Orange, Accent 2</strong>.</p>
+      </li>
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%202%20-%20Creating%20Advanced%20Charts%20/images/1.C.13.png" width="658" height="350">
+      </li>
+    </ol><br>
+    <h3>Congratulations! You have completed Lab 2, and you are ready for the next topic.</h3>
+    <h3></h3>
+    <h1>Author(s)</h1>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sandipsahajoy/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDV0130ENSkillsNetwork20531073-2022-01-01" target="_blank" rel="external">Sandip Saha Joy</a></li>
+    </ul>
+    <h2>Other Contributor(s)</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/stevelryan?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDV0130ENSkillsNetwork20531073-2022-01-01" target="_blank" rel="external">Steve Ryan</a></li>
+    </ul>
+    <h1>Changelog</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-09-10</td>
+          <td>1.2</td>
+          <td>Steve Ryan</td>
+          <td>Added software and dataset info</td>
+        </tr>
+        <tr>
+          <td>2020-09-09</td>
+          <td>1.1</td>
+          <td>Steve Ryan</td>
+          <td>ID Review</td>
+        </tr>
+        <tr>
+          <td>2020-09-05</td>
+          <td>1.0</td>
+          <td>Sandip Saha Joy</td>
+          <td>Initial version created</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

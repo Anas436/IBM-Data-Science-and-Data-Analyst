@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/IDSNlogo.png" width="200" height="200">
+    <h1>Hands-on Lab 1: Creating Basic Charts</h1>
+    <p><strong>Estimated time needed:</strong> 20 minutes</p>
+    <p>In this lab, you will learn how to create some basic charts in Excel. First, we will look at how to create a column chart and then an area chart. Next, we will learn how to create a bar chart and a line chart from a pivot table.</p>
+    <h1>Software Used in this Lab</h1>
+    <p>The instruction videos in this course use the full Excel Desktop version as this has all the available product features, but for the hands-on labs we will be using the free 'Excel for the web' version as this is available to everyone.</p>
+    <p>Although you can use the Excel Desktop software if you have access to this version, <ins>it is recommended that you use Excel for the web for the hands-on labs </ins>as the lab instructions specifically refer to this version, and there are some small differences in the interface and available features. If you do not yet have access to Excel for the Web, you can follow the instructions in the following lab to get started with it: <a href="https://cocl.us/IBMDeveloperSkillsNetwork-DA0130EN-HandsOnLab-1" target="_blank" rel="external">Hands-on Lab: Introduction to Excel for the web</a>.</p>
+    <h1>Dataset Used in this Lab</h1>
+    <p>The dataset used in this lab comes from the following source: <a href="https://www.kaggle.com/gagandeep16/car-sales?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDV0130ENSkillsNetwork20531073-2022-01-01" target="_blank" rel="external">https://www.kaggle.com/gagandeep16/car-sales</a> under a <strong><a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="external">CC0: Public Domain license</a></strong>. We are using a modified subset of that dataset for the lab, so to follow the lab instructions successfully, please use the dataset provided with the lab, rather than the dataset from the original source.</p>
+    <h1>Objectives</h1>
+    <p>After completing this lab, you will be able to:</p>
+    <ul>
+      <li>Create a column chart.</li>
+      <li>Create an area chart.</li>
+      <li>Create a bar chart from a pivot table.</li>
+      <li>Create a line chart from a pivot table.</li>
+    </ul>
+    <h1>Exercise 1 : Creating Column Charts and Area Charts in Excel</h1>
+    <p>In this exercise, you will learn how to create basic charts, such as column and area charts, in Excel.</p>
+    <h2>Task A : Create a Column Chart</h2>
+    <ol>
+      <li>
+        <p>Download the file <strong><a href="Car_Sales_Kaggle_DV0130EN_Lab1_Start.xlsx">Car_Sales_Kaggle_DV0130EN_Lab1_Start.xlsx</a></strong>. Upload and open it using Excel for the web.</p>
+      </li>
+      <li>
+        <p>Switch to the worksheet named <strong>Column Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A (Manufacturer)</strong>, and select <strong>Filter...</strong>.</p>
+      </li>
+      <li>
+        <p>In the list, only select <strong>Toyota</strong> and click <strong>OK</strong>.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.A.4.png" width="350" height="445">
+      </li>
+    </ol><br>
+    <ol start="5">
+      <li>
+        <p>Select column <strong>B</strong>, then hold <strong>SHIFT</strong> and select column <strong>C</strong>.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.A.5.png" width="640" height="300">
+      </li>
+    </ol><br>
+    <ol start="6">
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Column</strong> Chart and choose <strong>Clustered Column</strong> from the <strong>2-D Column</strong> category.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.A.6.png" width="640" height="400">
+      </li>
+    </ol><br>
+    <ol start="7">
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Chart Title</strong> and select <strong>Edit Chart Title...</strong>.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.A.8.png" width="350" height="400">
+      </li>
+    </ol><br>
+    <ol start="9">
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Power Perf Factor of Toyota Cars"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.A.10.png" width="780" height="350">
+      </li>
+    </ol><br>
+    <h2>Task B : Create an Area Chart</h2>
+    <ol>
+      <li>
+        <p>Switch to the worksheet named <strong>Area Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A (Manufacturer)</strong>, and select <strong>Filter...</strong>.</p>
+      </li>
+      <li>
+        <p>In the list, only select <strong>Toyota</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Select column <strong>B</strong>, then hold <strong>SHIFT</strong> and select column <strong>C</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Area</strong> Chart and choose <strong>Area</strong> from the <strong>2-D Area</strong> category.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.B.5.png" width="850" height="400">
+      </li>
+    </ol><br>
+    <ol start="6">
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Data Labels</strong> and select <strong>Show</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Format</strong> group of the <strong>Chart</strong> tab, click <strong>Format</strong>.</p>
+      </li>
+      <li>
+        <p>On the right side menu bar <strong>Format</strong>, select <strong>Series "Unit Sales" > Fill > Gold, Accent 4</strong>.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.B.9.png" width="350" height="575">
+      </li>
+    </ol><br>
+    <ol start="10">
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/1.B.10.png" width="763" height="350">
+      </li>
+    </ol><br>
+    <h1>Exercise 2 : Create Bar Charts and Line Charts from a Pivot Table in Excel</h1>
+    <p>In this exercise, you will learn how to create basic charts, such as bar and line charts, using a pivot table in Excel.</p>
+    <h2>Task A : Create a Bar Chart from a Pivot Table</h2>
+    <ol>
+      <li>
+        <p>Switch to the worksheet named <strong>Bar Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A</strong>, and select <strong>Manufacturer > Filter...</strong>.</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/2.A.2.png" width="500" height="300">
+      </li>
+    </ol><br>
+    <ol start="3">
+      <li>
+        <p>In the list, only select <strong>Toyota</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Double-click cell <strong>A4</strong> to expand entire field.</p>
+      </li>
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Bar Chart</strong> and choose <strong>Clustered Bar</strong> from the <strong>2-D Bar</strong> category.</p>
+      </li>
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Data Labels</strong> and select <strong>Inside End</strong>.</p>
+      </li>
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/2.A.8.png" width="665" height="400">
+      </li>
+    </ol><br>
+    <h2>Task B : Create a Line Chart from a Pivot Table</h2>
+    <ol>
+      <li>
+        <p>Switch to the worksheet named <strong>Line Chart</strong>.</p>
+      </li>
+      <li>
+        <p>Click the <strong>filter drop-down</strong> in column <strong>A</strong>, and select <strong>Manufacturer > Filter...</strong>.</p>
+      </li>
+      <li>
+        <p>In the list, only select <strong>Acura, Honda, Infiniti, Lexus, Mitsubishi, Nissan, Subaru, Toyota</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>Click any cell of the pivot table.</p>
+      </li>
+      <li>
+        <p>On the <strong>Charts</strong> group of the <strong>Insert</strong> tab, click <strong>Line</strong> Chart and choose <strong>Line with Markers</strong> from the <strong>2-D Line</strong> category.</p>
+      </li>
+      <li>
+        <p>Click on the floating chart area to access the <strong>Chart</strong> tab in the ribbon.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Chart Title</strong> and select <strong>Edit Chart Title...</strong>.</p>
+      </li>
+      <li>
+        <p>In the text input area of the dialog box <strong>Edit Title</strong>, write <strong>"Average Retention % of Japanese Auto Manufacturers"</strong> and click <strong>OK</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Data Labels</strong> and select <strong>Below</strong>.</p>
+      </li>
+      <li>
+        <p>On the <strong>Labels</strong> group of the <strong>Chart</strong> tab, click <strong>Legend</strong> and select <strong>None</strong>.</p>
+      </li>
+      <li>
+        <p>Your chart should look something like the one below:</p>
+        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DV0130EN-SkillsNetwork/Hands-on%20Labs/Lab%201%20-%20Creating%20Basic%20Charts/images/2.B.11.png" width="770" height="350">
+      </li>
+    </ol><br>
+    <h3>Congratulations! You have completed Lab 1, and you are ready for the next topic.</h3>
+    <h3></h3>
+    <h1>Author(s)</h1>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sandipsahajoy/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDV0130ENSkillsNetwork20531073-2022-01-01" target="_blank" rel="external">Sandip Saha Joy</a></li>
+    </ul>
+    <h2>Other Contributor(s)</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/stevelryan?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDV0130ENSkillsNetwork20531073-2022-01-01" target="_blank" rel="external">Steve Ryan</a></li>
+    </ul>
+    <h1>Changelog</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2020-09-10</td>
+          <td>1.2</td>
+          <td>Steve Ryan</td>
+          <td>Added software and dataset info</td>
+        </tr>
+        <tr>
+          <td>2020-09-09</td>
+          <td>1.1</td>
+          <td>Steve Ryan</td>
+          <td>ID review</td>
+        </tr>
+        <tr>
+          <td>2020-09-01</td>
+          <td>1.0</td>
+          <td>Sandip Saha Joy</td>
+          <td>Initial version created</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>
