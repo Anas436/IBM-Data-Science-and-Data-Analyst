@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/IDSNlogo.png" width="200" height="200">
+    <h3>Getting started with the Model Asset Exchange and the Data Asset Exchange</h3>
+    <p>In this lab you will explore the Model Asset Exchange (MAX) and the Data Asset Exchange (DAX), which are two open source Data Science resources on IBM Developer.</p>
+    <h3>Objective for Exercise 1:</h3>
+    <ul>
+      <li>Where to find open data sets on IBM Developer</li>
+      <li>How to explore those data sets</li>
+    </ul>
+    <h3>Objective for Exercise 2:</h3>
+    <ul>
+      <li>Find ready-to-use deep learning models on the Model Asset Exchange</li>
+      <li>Explore the deep learning model-serving detecting the image.</li>
+    </ul>
+    <p><em>It will take you approximately 30 minutes to complete the lab. Only a web browser is required to complete the tasks.</em></p>
+    <h2>Exercise 1: Explore deep learning datasets</h2>
+    <p>The Data Asset Exchange is a curated collection of open datasets from IBM Research and 3rd parties that you can use to train models.</p>
+    <ol>
+      <li>
+        <p>Open <a href="https://developer.ibm.com/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://developer.ibm.com/</a> in your web browser.</p>
+      </li>
+      <li>
+        <p>From the main menu select “Open Source at IBM” > “Data Asset eXchange”. The DAX homepage is displayed.</p>
+      </li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/21_model.png" width="600">
+    <p>The collection includes datasets from the Debater project (<a href="https://www.research.ibm.com/artificial-intelligence/project-debater/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://www.research.ibm.com/artificial-intelligence/project-debater/</a>), datasets that can be used to train models to perform document layout analysis, natural language processing, time series analysis and more.</p>
+    <ol start="3">
+      <li>Open the NOAA Weather Data dataset (<a href="https://developer.ibm.com/exchanges/data/all/jfk-weather-data/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://developer.ibm.com/exchanges/data/all/jfk-weather-data/</a>), which contains data from a weather station at the John F. Kennedy Airport in New York spanning 8 years. This dataset was used to train the weather forecaster model on MAX (<a href="https://developer.ibm.com/exchanges/models/all/max-weather-forecaster/" target="_blank" rel="external">https://developer.ibm.com/exchanges/models/all/max-weather-forecaster/</a>).</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/22_model.png" width="600">
+    <p>You can download the dataset using the “Get this dataset” link. Datasets are stored as compressed archives, which you can extract using any utility that supports the tar.gz format. If you are not familiar with this file format take a look at this short open source tutorial <a href="https://opensource.com/article/17/7/how-unzip-targz-file?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://opensource.com/article/17/7/how-unzip-targz-file</a>.</p>
+    <ol start="4">
+      <li>Inspect the dataset’s metadata.</li>
+    </ol>
+    <p>
+      This dataset is stored as tabular data and formatted as a comma separated value (CSV) file, which is a very popular basic data exchange format.
+      The dataset was published under the data science friendly CDLA-Sharing license (<a href="https://cdla.io/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">https://cdla.io/</a>).
+      The dataset contains time-series data and can be used to predict weather trends.
+      5. Most datasets are complemented by Python notebooks that you can use to explore, pre-process, and analyze the data. You can access the notebook (or notebooks) by clicking the “Run dataset Notebooks”:
+    </p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/23_model.png" width="600">
+    <p>The notebooks are hosted on Watson Studio, IBM’s Data Science platform. Later in this course you’ll learn more about Watson Studio, notebooks and how to run them.</p>
+    <ol start="6">
+      <li>[Optional] If you are already familiar with notebooks and Watson Studio feel free to open the link and import the project or notebook. The example below depicts the weather dataset project assets, which include the raw data file and two notebooks.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/24_model.png" width="600">
+    <p>This concludes Exercise 1 of this lab, which introduced the Data Asset Exchange.</p>
+    <h2>Exercise 2 - Explore deep learning models</h2>
+    <p>The Model Asset Exchange is a curated repository of open source deep learning models for a variety of domains, such as text, image, audio, and video processing.</p>
+    <ol>
+      <li>
+        <p>Open <a href="http://ml-exchange.org/models?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">http://ml-exchange.org/models</a> in your web browser.</p>
+      </li>
+      <li>
+        <p>The MAX home page is displayed. <em>In this introductory lab exercise, we are going to focus on a few MAX key features.</em></p>
+      </li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/max.png">
+    <ol start="3">
+      <li>Select the <strong>Object Detector</strong> model from the list of options available.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/objectdetector.png">
+    <p>This model recognizes the objects present in an image. The model consists of a deep convolutional net base model for image feature extraction, together with additional convolutional layers specialized for the task of object detection, that was trained on the COCO data set. The input to the model is an image, and the output is a extracted objects from the image, appropriately labelled.</p>
+    <ol start="4">
+      <li>Scroll down and in <strong>Test the model in CodePen</strong> click <strong>CodePen</strong> hyperlink as highlighted below:</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/codepen.png">
+    <p>
+      CodePen is a social development environment. At its heart, it allows you to write code in the browser, and see the results of it as you build. A useful and liberating online code editor for developers of any skill, and particularly empowering for people learning to code.
+      Some of the models are already built for you to test. Let's test one of the models. Click <strong>MAX TFJS models</strong>
+    </p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/selectmodel.png">
+    <ol start="5">
+      <li>Upload an image. You may choose images with person, dog, cat, truck, car etc., which are labels the model has been trained on.</li>
+    </ol>
+    <details>
+      <summary>Click here for all the labels the model is trained on</summary>
+      <ol>
+        <li>person</li>
+        <li>bicycle</li>
+        <li>car</li>
+        <li>motorcycle</li>
+        <li>airplane</li>
+        <li>bus</li>
+        <li>train</li>
+        <li>truck</li>
+        <li>boat</li>
+        <li>traffic light</li>
+        <li>fire hydrant</li>
+        <li>stop sign</li>
+        <li>parking meter</li>
+        <li>bench</li>
+        <li>bird</li>
+        <li>cat</li>
+        <li>dog</li>
+        <li>horse</li>
+        <li>sheep</li>
+        <li>cow</li>
+        <li>elephant</li>
+        <li>bear</li>
+        <li>zebra</li>
+        <li>giraffe</li>
+        <li>backpack</li>
+        <li>umbrella</li>
+        <li>handbag</li>
+        <li>tie</li>
+        <li>suitcase</li>
+        <li>frisbee</li>
+        <li>skis</li>
+        <li>snowboard</li>
+        <li>sports ball</li>
+        <li>kite</li>
+        <li>baseball bat</li>
+        <li>baseball glove</li>
+        <li>skateboard</li>
+        <li>surfboard</li>
+        <li>tennis racket</li>
+        <li>bottle</li>
+        <li>wine glass</li>
+        <li>cup</li>
+        <li>fork</li>
+        <li>knife</li>
+        <li>spoon</li>
+        <li>bowl</li>
+        <li>banana</li>
+        <li>apple</li>
+        <li>sandwich</li>
+        <li>orange</li>
+        <li>broccoli</li>
+        <li>carrot</li>
+        <li>hot dog</li>
+        <li>pizza</li>
+        <li>donut</li>
+        <li>cake</li>
+        <li>chair</li>
+        <li>couch</li>
+        <li>potted plant</li>
+        <li>bed</li>
+        <li>dining table</li>
+        <li>toilet</li>
+        <li>tv</li>
+        <li>laptop</li>
+        <li>mouse</li>
+        <li>remote</li>
+        <li>keyboard</li>
+        <li>cell phone</li>
+        <li>microwave</li>
+        <li>oven</li>
+        <li>toaster</li>
+        <li>sink</li>
+        <li>refrigerator</li>
+        <li>book</li>
+        <li>clock</li>
+        <li>vase</li>
+        <li>scissors</li>
+        <li>teddy bear</li>
+        <li>hair drier</li>
+        <li>toothbrush</li>
+      </ol>
+    </details>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/selectimage.png">
+    <p>Here we are using <strong>Image Segementer</strong> which is the division of an image into regions or categories, which correspond to different objects or parts of objects. Every pixel in an image is allocated to one of a number of these categories.</p>
+    <ol start="6">
+      <li>Click on the icon <strong>Extract Prediction</strong> as shown below:</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/extract.png">
+    <p>You will now be able to see the output of the prediction on the basis of the image you uploaded.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module1/images/predict.png">
+    <p>Here the background and the dog image are seperated showing the two different parts of the image. <strong>You can also try the webcam option, which will show the real-time prediction by toggle-on webcam option.</strong></p>
+    <p>This concludes Exercise 2 of this lab, which introduced the Model Asset Exchange.</p>
+    <blockquote>
+      <p>Optionally you can watch a demo of the Object detector model <a href="https://video.ibm.com/recorded/128825527?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0105ENSkillsNetwork20083975-2022-01-01" target="_blank" rel="external">here</a>.</p>
+    </blockquote>
+    <h2>Author(s)</h2>
+    <h4>Joseph Santarcangelo</h4>
+    <h4></h4>
+    <h3>Other Contributor(s)</h3>
+    <p>Lavanya</p>
+    <h2>Changelog</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2022-04-19</td>
+          <td>2.4</td>
+          <td>Malika</td>
+          <td>Updated the screenshot</td>
+        </tr>
+        <tr>
+          <td>2022-03-14</td>
+          <td>2.3</td>
+          <td>Malika</td>
+          <td>Updated the screenshot</td>
+        </tr>
+        <tr>
+          <td>2022-01-08</td>
+          <td>2.2</td>
+          <td>Malika</td>
+          <td>Added exercise CodePen</td>
+        </tr>
+        <tr>
+          <td>2022-01-07</td>
+          <td>2.1</td>
+          <td>Malika</td>
+          <td>Removed exercise 1</td>
+        </tr>
+        <tr>
+          <td>2020-08-25</td>
+          <td>2.0</td>
+          <td>Lavanya</td>
+          <td>Migrated Lab to Markdown and added to course repo in GitLab</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2020. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

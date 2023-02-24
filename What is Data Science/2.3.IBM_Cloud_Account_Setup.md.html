@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/IDSNlogo.png" width="200" height="200">
+    <h2>Objectives</h2>
+    <h3>Hands on Lab: Watson Studio Service creation(10min)</h3>
+    <p>After completing this lab, you will be able to:</p>
+    <ul>
+      <li>Use Watson Studio for your data science problem solving.</li>
+    </ul>
+    <h3>Prerequisite:</h3>
+    <p>You need to have an IBM Cloud Account to do this lab. If you do not have an IBM Cloud account, click and open this <a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CC0100EN-SkillsNetwork/labs/IBMCloud_accountCreation/CreateIBMCloudAccount.md.html" target="_blank" rel="external">link</a> and follow the instructions, to create an IBM Cloud account.</p>
+    <h3>Exercise 1: Create an instance of Watson Studio service</h3>
+    <h4>Task 1: Add Watson Studio as a resource</h4>
+    <ol>
+      <li>
+        <p>Go to <a href="https://cloud.ibm.com/login?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01" target="_blank" rel="external">IBM Cloud Login</a> and login with your credentials.</p>
+      </li>
+      <li>
+        <p>In the <a href="https://cloud.ibm.com/catalog?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01" target="_blank" rel="external">IBM Cloud Catalog</a> search or choose <strong>AI/Machine Learning</strong> from <strong>Category</strong>.</p>
+      </li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Category.png" width="75%" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <p>and select <strong>Watson Studio</strong>.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Watson.png" width="75%" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="3">
+      <li>On the Watson Studio page, select an appropriate region depending on where you are accessing from, verify that the <strong>Lite</strong> plan is selected, and then click <strong>Create</strong>.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/5-create_watson_studio_lite.jpg" width="75%" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="4">
+      <li>Once the Watson Studio instance is successfully created, click on <strong>Launch IBM Cloud Pak for Data</strong>.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/launch-WS.png" width="75%" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="5">
+      <li>Once you get started, the first time, your IBM Cloud Pak for Data core services is provisioned.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/provisioning.png" width="75%" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <h1>Author(s)</h1>
+    <p>Joseph Santarcangelo</p>
+    <h1>Other Contributor(s)</h1>
+    <h4><a href="https://www.linkedin.com/in/malika-goyal-04798622/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01">Malika Singla</a></h4>
+    <h4></h4>
+    <h4><a href="https://www.linkedin.com/in/lavanya-sunderarajan-199a445/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01">Lavanya</a></h4>
+    <h4></h4>
+    <h2>Change log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2022-03-23</td>
+          <td>2.3</td>
+          <td>Pratiksha Verma</td>
+          <td>Updated instructions</td>
+        </tr>
+        <tr>
+          <td>2022-02-16</td>
+          <td>2.2</td>
+          <td>Niveditha</td>
+          <td>Updated watson screenshot</td>
+        </tr>
+        <tr>
+          <td>2021-10-11</td>
+          <td>2.1</td>
+          <td>Malika Singla</td>
+          <td>Updated Scenario</td>
+        </tr>
+        <tr>
+          <td>2021-06-14</td>
+          <td>2.0</td>
+          <td>Malika Singla</td>
+          <td>Forked from Original Version</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2021. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>

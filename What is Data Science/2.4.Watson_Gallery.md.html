@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/styles/default.min.css">
+  </head>
+  <body>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/IDSNlogo.png" width="200" height="200">
+    <h2>IBM Cloud Watson Studio</h2>
+    <p>Estimated Time (45 min)</p>
+    <p>IBM Watson Studio is a service from IBM, that provides a suite of tools and a collaborative environment for data scientists, developers and domain experts. In this lab, you will use Watson Studio and explore different datasets. As we have learnt in the course, the data is not only about numbers, it can be anything such as numeric data, text data, images, videos, audios etc. You will work on three samples.</p>
+    <p><strong>Sample 1</strong> in which you will learn about the dataset in which only numeric attributes are present.</p>
+    <p><strong>Sample 2</strong> in which you will learn about the dataset in which numeric &#x26; text attributes are present.</p>
+    <p><strong>Sample 3</strong> in which you will analyze how the Jupyter Notebooks look like. How a Data Scientist create the models?</p>
+    <p>Let's take a look that how different datasets are used by Data Scientist.</p>
+    <h4>Objectives :</h4>
+    <p>You will learn to:</p>
+    <ul>
+      <li>Launch Watson Studio for accessing Data Science Problems</li>
+      <li>Evaluate Numeric dataset</li>
+      <li>Evaluate dataset with Non-Numeric attributes</li>
+      <li>Evaluate Jupyter Notebook</li>
+    </ul>
+    <h4>Pre-requisite:</h4>
+    <p>Before you start, you need to have an IBM Cloud account. If not, follow the instructions given in the <a href="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/IBM_Cloud_Account_Setup.md.html" target="_blank" rel="external">link</a></p>
+    <h3>Exercise 1: Launch Watson Studio for accessing Data Science Problems</h3>
+    <ol>
+      <li>
+        <p>Login to IBM Cloud: <a href="https://cloud.ibm.com/login?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01" target="_blank" rel="external">https://cloud.ibm.com/login</a></p>
+      </li>
+      <li>
+        <p>Scroll down and click <em>Services and software</em> given in <em>Resource Summary</em>.</p>
+      </li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Services.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="3">
+      <li>When you click on Services and software, all your existing services will be shown in the list. Click the Watson Studio service you created:</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Watson_Studio.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="4">
+      <li>Click <em>Launch IBM Cloud Pak for Data</em>.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/launch-WS.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <h4>Exercise 2: Evaluate Numeric dataset</h4>
+    <ol>
+      <li>Click on Navigation Menu.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Navigate.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="2">
+      <li>Click on <em>Gallery</em>.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Gallery.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="3">
+      <li>Select <em>All Filters</em>. From <em>Format</em> select <em>Data</em> and from <em>Topic</em> select <em>Energy &#x26; Utilities, Enviornment and Industry Accelerator</em></li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/filter_1.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="4">
+      <li>Click on <em>UCI: Forest Fires</em>.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/UCI_Forest.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="5">
+      <li>Preview the data using the <em>Preview</em> option.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/data_UCI_Fires.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <h5>Explore the data</h5>
+    <p>The data is related to forest fires where the aim is to predict the burned area of forest fires, in the northeast region of Portugal, by using meterological and other data.</p>
+    <p><strong>Attribute Information:</strong></p>
+    <ol>
+      <li>X - x-axis spatial coordinate within the Montesinho park map: 1 to 9</li>
+      <li>Y - y-axis spatial coordinate within the Montesinho park map: 2 to 9</li>
+      <li>month - month of the year: 'jan' to 'dec'</li>
+      <li>day - day of the week: 'mon' to 'sun'</li>
+      <li>FFMC - FFMC index from the FWI system: 18.7 to 96.20</li>
+      <li>DMC - DMC index from the FWI system: 1.1 to 291.3</li>
+      <li>DC - DC index from the FWI system: 7.9 to 860.6</li>
+      <li>ISI - ISI index from the FWI system: 0.0 to 56.10</li>
+      <li>temp - temperature in Celsius degrees: 2.2 to 33.30</li>
+      <li>RH - relative humidity in %: 15.0 to 100</li>
+      <li>wind - wind speed in km/h: 0.40 to 9.40</li>
+      <li>rain - outside rain in mm/m2 : 0.0 to 6.4</li>
+      <li>area - the burned area of the forest (in ha): 0.00 to 1090.84</li>
+    </ol>
+    <p>
+      (this output variable is very skewed towards 0.0, thus it may make
+      sense to model with the logarithm transform).
+    </p>
+    <h3>Exercise 2: Evaluate Non-Numeric dataset</h3>
+    <p>The data doesn't have to be only based on numbers. Data can be text, images and other types as well. Let's look into data having text values.</p>
+    <ol>
+      <li>Use the <em>All Filters</em>. From <em>Format</em> select <em>Data</em> and from <em>Topic</em> select <em>Economy and Business</em>.</li>
+    </ol>
+    <p>You will get mutiple datasets given. Scroll down and select <em>Airbnb Data for Analytics: Trentino Reviews</em> (If you will not get the data using <strong>Load More</strong> option)</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/AIrbnb.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <ol start="2">
+      <li>Preview the data using the <em>Preview</em> option.</li>
+    </ol>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Airbnb_preview.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <h5>Explore the data</h5>
+    <p>Airbnb, Inc. is an American company that operates an online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities. Airbnb guests may leave a review after their stay, and these can be used as an indicator of airbnb activity.The minimum stay, price and number of reviews have been used to estimate the occupancy rate, the number of nights per year and the income per month for each listing.</p>
+    <p>This data can be used in various ways - To analyze the star ratings of places, to analyze the location preferences of the customers, to analyze the tone and sentiment of customer reviews and many more. Airbnb uses location data to improve guest satisfaction.</p>
+    <blockquote>
+      <p>💡 Can you think of what you can use this data for?</p>
+    </blockquote>
+    <p>The dataset comprises of three main tables:</p>
+    <ul>
+      <li>
+        <p>listings - Detailed listings data showing 96 attributes for each of the listings. Some of the attributes used in the analysis are price(continuous), longitude (continuous), latitude (continuous), listing_type (categorical), is_superhost (categorical), neighbourhood (categorical), ratings (continuous) among others.</p>
+      </li>
+      <li>
+        <p>reviews - Detailed reviews given by the guests with 6 attributes. Key attributes include date (datetime), listing_id (discrete), reviewer_id (discrete) and comment (textual).</p>
+      </li>
+      <li>
+        <p>calendar - Provides details about booking for the next year by listing. Four attributes in total including listing_id (discrete), date(datetime), available (categorical) and price (continuous).</p>
+      </li>
+    </ul>
+    <h3>Exercise 3: Evaluate Jupyter Notebook</h3>
+    <p>Use the <em>All Filters</em>. From <em>Format</em> select <em>Notebook</em> and select <em>Finding optimal locations of new stores using Decision Optimization</em></p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/New_Store.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <p>This notebook shows you how Decision Optimization can help to prescribe decisions for a complex constrained problem using Python to help determine the optimal location for a new store.</p>
+    <p>The objective is to minimize the total distance from libraries to coffee shops so that a book reader always gets to our coffee shop easily. It can be done by analyzing and displaying the location of the coffee shops on a map.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/Notebook.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <p>When we validate the dataset, the locations on map are seperated.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/loc_jupyter.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <p>But it is impossible to determine where to ideally open the coffee shops by just looking at the map.</p>
+    <p>This is solved by an optimization model that will help us determine where to locate the coffee shops in an optimal way.</p>
+    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0101EN-SkillsNetwork/labs/Module%202/images/loc2_jupyter.png" style="border: solid 1px grey;margin-top: 30px; margin-left: 30px; margin-bottom: 30px">
+    <h4>Summary</h4>
+    <p>In this lab, you have learnt about how different datasets are available and how a data scientist create and predict the models using the model building in IBM Watson Jupyter Notebook.</p>
+    <h1>Author(s)</h1>
+    <h4><a href="https://www.linkedin.com/in/malika-goyal-04798622/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01">Malika Singla</a></h4>
+    <h4></h4>
+    <h1>Other Contributor(s)</h1>
+    <h4><a href="https://www.linkedin.com/in/lavanya-sunderarajan-199a445/?utm_medium=Exinfluencer&#x26;utm_source=Exinfluencer&#x26;utm_content=000026UJ&#x26;utm_term=10006555&#x26;utm_id=NA-SkillsNetwork-Channel-SkillsNetworkCoursesIBMDeveloperSkillsNetworkDS0101ENSkillsNetwork20717495-2022-01-01">Lavanya</a></h4>
+    <h4></h4>
+    <h2>Change log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Version</th>
+          <th>Changed by</th>
+          <th>Change Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2022-07-22</td>
+          <td>1.2</td>
+          <td>Appalabhaktula Hema</td>
+          <td>Updated Screenshots and instructions</td>
+        </tr>
+        <tr>
+          <td>2022-02-16</td>
+          <td>1.1</td>
+          <td>Niveditha</td>
+          <td>Updated watson Screenshot</td>
+        </tr>
+        <tr>
+          <td>2021-06-010</td>
+          <td>1.0</td>
+          <td>Malika Singla</td>
+          <td>Initial Version</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2></h2>
+    <h3 align="center">© IBM Corporation 2021. All rights reserved.</h3>
+    <h3></h3>
+    <script>window.addEventListener('load', function() {
+snFaculty.inject();
+});</script>
+    <script src="https://skills-network-assets.s3.us.cloud-object-storage.appdomain.cloud/scripts/inject.43989f87.js"></script>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.1/highlight.min.js"></script>
+    <script src="https://unpkg.com/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  </body>
+</html>
